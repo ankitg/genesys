@@ -7,5 +7,6 @@
     <string name="title_activity_chat">Chat</string>
     <string name="main_empty_list">There is no recent conversation, write new message
 		to start one.</string>
+	<string name="chatlib_baseurl">"http://192.168.43.94:8888/api/v2/chats"</string>
 
 </resources>

@@ -61,7 +61,7 @@ public class ChatActivity extends ListActivity implements AsyncResponse {
 			callParams.put("operationName", "SendMessage");
 			callParams.put("text", message);
 			
-			params.put("url", "http://192.168.43.94:8888/api/v2/chats/" + chatSession.getId());
+			params.put("url", getResources().getString(R.string.chatlib_baseurl) +"/"+ chatSession.getId());
 			params.put("type", APICalls.MESSAGE.getTypeCode());
 			params.put("callParams", callParams);
 		} catch (JSONException e) {
@@ -133,7 +133,7 @@ public class ChatActivity extends ListActivity implements AsyncResponse {
 		Log.d("TEST","pollForResponse()");
 		recieveMessageCall = new Polling();
 		recieveMessageCall.delegate = this;
-		recieveMessageCall.execute(chatSession.getId());
+		recieveMessageCall.execute(getResources().getString(R.string.chatlib_baseurl), chatSession.getId());
 	}
 
 	/* (non-Javadoc)

@@ -63,7 +63,7 @@ public class LoginActivity extends Activity implements AsyncResponse {
 				callParams.put("nickname", chat.getNickname());
 				callParams.put("subject", chat.getSubject());
 				
-				params.put("url", "http://192.168.43.94:8888/api/v2/chats");
+				params.put("url", getResources().getString(R.string.chatlib_baseurl));
 				params.put("type", APICalls.REQUESTCHAT.getTypeCode());
 				params.put("callParams", callParams);
 			} catch (JSONException e) {

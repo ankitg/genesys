@@ -26,7 +26,7 @@ public class Polling extends AsyncTask<String, Void, JSONObject> {
 	
 	@Override
 	protected JSONObject doInBackground(String... params) {
-		return recieveMessage(params[0]);
+		return recieveMessage(params[0], params[1]);
 	}
 	
 	 protected void onPostExecute(JSONObject result) {
@@ -34,13 +34,13 @@ public class Polling extends AsyncTask<String, Void, JSONObject> {
      	delegate.onWebCallFinish(result, callType);
      }
 	
-	private JSONObject recieveMessage(String chatId) {
+	private JSONObject recieveMessage(String baseURL, String chatId) {
 		try {
 			Log.d("TEST","recieveMessage()");
 			HttpClient httpclient = new DefaultHttpClient();
 
 			HttpGet request = new HttpGet();
-			URI website = new URI("http://192.168.43.94:8888/api/v2/chats/" + chatId + "/messages");
+			URI website = new URI(baseURL + "/" + chatId + "/messages");
 			request.setURI(website);
 			request.setHeader("Accept", "application/json");
 			HttpResponse response = httpclient.execute(request);
