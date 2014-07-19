@@ -63,7 +63,7 @@ public class AwesomeAdapter extends BaseAdapter{
 		{
 			holder.message.setBackgroundDrawable(null);
 			lp.gravity = Gravity.LEFT;
-			holder.message.setTextColor(R.color.textFieldColor);
+			holder.message.setTextColor(R.color.chatlibTextFieldColor);
 		}
 		else
 		{		
@@ -80,7 +80,7 @@ public class AwesomeAdapter extends BaseAdapter{
 				lp.gravity = Gravity.LEFT;
 			}
 			holder.message.setLayoutParams(lp);
-			holder.message.setTextColor(R.color.textColor);	
+			holder.message.setTextColor(R.color.chatlibTextColor);	
 		}
 		return convertView;
 	}

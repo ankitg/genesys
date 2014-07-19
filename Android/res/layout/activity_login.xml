@@ -4,66 +4,84 @@
     android:layout_height="match_parent"
     tools:context="${packageName}.${activityClass}" >
 
+    <TextView
+        style="@style/ChatlibLoginTextView"
+        android:layout_alignBaseline="@+id/et_firstname_login"
+        android:layout_alignBottom="@+id/et_firstname_login"
+        android:text="First Name" />
+    
     <EditText
+        style="@style/ChatlibLoginEditText"
         android:id="@+id/et_firstname_login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:ems="10" >
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" />
 
-        <requestFocus />
-    </EditText>
-
+    <TextView
+        style="@style/ChatlibLoginTextView"
+        android:layout_alignBaseline="@+id/et_lastname_login"
+        android:layout_alignBottom="@+id/et_lastname_login"
+        android:text="Last Name" />
+    
     <EditText
+        style="@style/ChatlibLoginEditText"
         android:id="@+id/et_lastname_login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/et_firstname_login"
-        android:ems="10" />
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/et_firstname_login" />
 
+    <TextView
+        style="@style/ChatlibLoginTextView"
+        android:layout_alignBaseline="@+id/et_nickname_login"
+        android:layout_alignBottom="@+id/et_nickname_login"
+        android:text="Nickname" />
+    
     <EditText
+        style="@style/ChatlibLoginEditText"
         android:id="@+id/et_nickname_login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/et_lastname_login"
-        android:ems="10" />
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/et_lastname_login" />
 
+    <TextView
+        style="@style/ChatlibLoginTextView"
+        android:layout_alignBaseline="@+id/et_subject_login"
+        android:layout_alignBottom="@+id/et_subject_login"
+        android:text="Subject" />
+    
     <EditText
+        style="@style/ChatlibLoginEditText"
         android:id="@+id/et_subject_login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/et_nickname_login"
-        android:ems="10" />
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/et_nickname_login" />
 
+    <TextView
+        style="@style/ChatlibLoginTextView"
+        android:layout_alignBaseline="@+id/et_email_login"
+        android:layout_alignBottom="@+id/et_email_login"
+        android:text="Email" />
+    
     <EditText
+        style="@style/ChatlibLoginEditText"
         android:id="@+id/et_email_login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/et_subject_login"
-        android:ems="10" />
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/et_subject_login" />
 
     <Button
+        style="@style/ChatlibLoginButton"
         android:id="@+id/btn_start_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_centerVertical="true"
-        android:layout_marginLeft="14dp"
+        android:layout_below="@+id/et_email_login"
         android:text="Start Chat"
         android:onClick="doChat" />
 
     <Button
+        style="@style/ChatlibLoginButton"
         android:id="@+id/btn_cancel_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/btn_start_login"
         android:layout_alignBottom="@+id/btn_start_login"
-        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@+id/btn_start_login"
         android:text="Cancel"
         android:onClick="doCancel" />
 

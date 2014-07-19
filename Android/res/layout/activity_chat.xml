@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="${packageName}.${activityClass}"
-    android:background="@color/listViewBg"
+    android:background="@color/chatlibListViewBg"
     android:orientation="vertical" >
 
     <LinearLayout
@@ -22,7 +22,7 @@
             android:background="@drawable/message_field"
             android:hint="Write here"
             android:padding="5sp"
-            android:textColor="@color/textFieldColor" />
+            android:textColor="@color/chatlibTextFieldColor" />
 
         <Button
             android:id="@+id/btn_chat"

@@ -26,6 +26,7 @@ public class ChatActivity extends ListActivity implements AsyncResponse {
 	Session chatSession;
 	Thread pollingTimer;
 	Polling recieveMessageCall;
+	Boolean interrupted = false;
 	
 	EditText et_chat;
 	
@@ -113,11 +114,15 @@ public class ChatActivity extends ListActivity implements AsyncResponse {
         		}
         		catch (InterruptedException e)
         		{
-        			Log.e("Error","The splash screen was interrupted, " + e);
+        			Log.e("Error","polling interrupted, " + e);
+        			interrupted = true;
+        			return;
         		}
         		finally
         		{
-        			pollForResponse();
+        			if(!interrupted) {
+        				pollForResponse();
+        			}
         		}
        		}
 		};
@@ -137,9 +142,20 @@ public class ChatActivity extends ListActivity implements AsyncResponse {
 	@Override
 	protected void onPause() {
 		super.onPause();
-		recieveMessageCall.cancel(true);
-		pollingTimer.stop();
+		if(recieveMessageCall != null && recieveMessageCall.delegate!=null) {
+			recieveMessageCall.delegate = null;
+			recieveMessageCall.cancel(true);
+		}
+		pollingTimer.interrupt();
 	}
 	
+	@Override
+	public void onBackPressed() {
+		super.onBackPressed();
+//		if(recieveMessageCall != null && recieveMessageCall.delegate!=null) {
+//			recieveMessageCall.delegate = null;
+//			recieveMessageCall.cancel(true);
+//		}
+	}
 }
 

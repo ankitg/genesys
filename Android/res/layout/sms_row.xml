@@ -10,11 +10,11 @@
         android:layout_height="wrap_content"
         android:layout_margin="5sp"
         android:background="@drawable/speech_bubble_green"
-        android:shadowColor="@color/textShadow"
+        android:shadowColor="@color/chatlibTextShadow"
         android:shadowDx="1"
         android:shadowDy="1"
         android:text="Medium Text"
-        android:textColor="@color/textColor"
+        android:textColor="@color/chatlibTextColor"
         android:textSize="20sp" />
 
 </LinearLayout>

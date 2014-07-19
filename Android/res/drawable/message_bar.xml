@@ -4,9 +4,9 @@
     android:shape="rectangle" >
 
     <gradient
-        android:centerColor="@color/barMeduimColor"
-        android:endColor="@color/barDarkColor"
-        android:startColor="@color/barLightColor" 
+        android:centerColor="@color/chatlibBarMeduimColor"
+        android:endColor="@color/chatlibBarDarkColor"
+        android:startColor="@color/chatlibBarLightColor" 
         android:angle="-90" />
 
     

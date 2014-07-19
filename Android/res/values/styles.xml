@@ -17,4 +17,33 @@
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
 
+    
+    <style name="ChatlibLoginTextView" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:textColor">@color/chatlibTextLabelColor</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+    
+    <style name="ChatlibLoginEditText" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:ems">10</item>
+    </style>
+    
+    <style name="ChatlibLoginButton" parent="@android:style/Widget.Button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_margin">30dp</item>
+		<item name="android:textColor">#FFFFFF</item>
+		<item name="android:textSize">20sp</item>
+		<item name="android:background">@drawable/chatlibbuttonshape</item>
+		<item name="android:shadowColor">#A8A8A8</item> 
+		<item name="android:shadowRadius">5</item>
+    </style>
+    
 </resources>
