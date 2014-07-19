@@ -13,8 +13,8 @@ The code here provides for an iOS and an Android library solution to enable anyo
 
 ### Android
 
-The android solution presents itself as a jar and provides views (activities) for login and the actual chat window. The library is completely skinable and has no dependencies (apart from appcompat for backward compatibility).
+The android solution presents itself as a jar and provides views (activities) for login and the actual chat window. The library is completely skinable and has no dependencies (apart from appcompat for backward compatibility). It uses a speech bubble styling from <https://github.com/AdilSoomro/Android-Speech-Bubble>
 
 ### iOS
 
-The iOS solution presents itself in form of a CocoaPod.
+The iOS solution presents itself in form of a CocoaPod. You can find it here: <https://github.com/sin2/SAGenesysChat>

@@ -2,11 +2,8 @@ package com.color.speechbubble;
 
 import java.util.ArrayList;
 
-import com.genesys.chatlib.R;
-
 import android.annotation.SuppressLint;
 import android.content.Context;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,6 +11,8 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.LinearLayout.LayoutParams;
 import android.widget.TextView;
+
+import com.genesys.chatlib.R;
 /**
  * AwesomeAdapter is a Custom class to implement custom row in ListView
  * 

@@ -8,5 +8,12 @@
     <string name="main_empty_list">There is no recent conversation, write new message
 		to start one.</string>
 	<string name="chatlib_baseurl">"http://192.168.43.94:8888/api/v2/chats"</string>
+	<string name="cancel">Cancel</string>
+	<string name="start_chat">Start Chat</string>
+	<string name="email">Email</string>
+	<string name="subject">Subject</string>
+	<string name="nickname">Nickname</string>
+	<string name="last_name">Last Name</string>
+	<string name="first_name">First Name</string>
 
 </resources>

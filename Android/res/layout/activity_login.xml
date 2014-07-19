@@ -8,7 +8,7 @@
         style="@style/ChatlibLoginTextView"
         android:layout_alignBaseline="@+id/et_firstname_login"
         android:layout_alignBottom="@+id/et_firstname_login"
-        android:text="First Name" />
+        android:text="@string/first_name" />
     
     <EditText
         style="@style/ChatlibLoginEditText"
@@ -20,7 +20,7 @@
         style="@style/ChatlibLoginTextView"
         android:layout_alignBaseline="@+id/et_lastname_login"
         android:layout_alignBottom="@+id/et_lastname_login"
-        android:text="Last Name" />
+        android:text="@string/last_name" />
     
     <EditText
         style="@style/ChatlibLoginEditText"
@@ -32,7 +32,7 @@
         style="@style/ChatlibLoginTextView"
         android:layout_alignBaseline="@+id/et_nickname_login"
         android:layout_alignBottom="@+id/et_nickname_login"
-        android:text="Nickname" />
+        android:text="@string/nickname" />
     
     <EditText
         style="@style/ChatlibLoginEditText"
@@ -44,7 +44,7 @@
         style="@style/ChatlibLoginTextView"
         android:layout_alignBaseline="@+id/et_subject_login"
         android:layout_alignBottom="@+id/et_subject_login"
-        android:text="Subject" />
+        android:text="@string/subject" />
     
     <EditText
         style="@style/ChatlibLoginEditText"
@@ -56,7 +56,7 @@
         style="@style/ChatlibLoginTextView"
         android:layout_alignBaseline="@+id/et_email_login"
         android:layout_alignBottom="@+id/et_email_login"
-        android:text="Email" />
+        android:text="@string/email" />
     
     <EditText
         style="@style/ChatlibLoginEditText"
@@ -71,7 +71,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/et_email_login"
-        android:text="Start Chat"
+        android:text="@string/start_chat"
         android:onClick="doChat" />
 
     <Button
@@ -82,7 +82,7 @@
         android:layout_alignBaseline="@+id/btn_start_login"
         android:layout_alignBottom="@+id/btn_start_login"
         android:layout_toRightOf="@+id/btn_start_login"
-        android:text="Cancel"
+        android:text="@string/cancel"
         android:onClick="doCancel" />
 
 </RelativeLayout>

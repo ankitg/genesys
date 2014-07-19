@@ -20,8 +20,6 @@ import org.json.JSONObject;
 import android.os.AsyncTask;
 import android.util.Log;
 
-import com.genesys.chatlib.enums.APICalls;
-
 public class HTTPService extends AsyncTask<JSONObject, Void, JSONObject> {
 		int callType;
 		public AsyncResponse delegate=null;
