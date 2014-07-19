@@ -7,6 +7,8 @@ public class Chat {
 	private String subject;
 	private String email;
 	
+	public Chat() {}
+	
 	/**
 	 * @return the firstName
 	 */
