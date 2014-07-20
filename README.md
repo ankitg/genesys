@@ -1,4 +1,4 @@
-#Genesys Hackathon.
+#Genesys Chat Libraries.
 ----------
 
 ## Overview
@@ -11,6 +11,11 @@ The code here provides for an iOS and an Android library solution to enable anyo
 
 ## USAGE
 
+### Chat server
+
+- Clone the code from <https://github.com/skreis/gws-emulator>
+- Setup the chat server following the Readme.md file included in the repo.
+
 ### Android
 
 The android solution presents itself as a jar and provides views (activities) for login and the actual chat window. The library is completely skinable and has no dependencies (apart from appcompat for backward compatibility). It uses a speech bubble styling from <https://github.com/AdilSoomro/Android-Speech-Bubble>
@@ -21,7 +26,6 @@ There are 2 android projects:
 - "AndroidSample" in a folder with the same name.
 
 AndroidSample demonstrates the simple usage of the library without overriding any styles. 
-
 
 ### iOS
 
